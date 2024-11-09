@@ -6,7 +6,7 @@
     <title>Chennai Travel Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        * {
+      * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -276,6 +276,37 @@
             .header-text p {
                 font-size: 0.8rem;
             }
+}
+     
+
+        /* ... (keep all your original styles) ... */
+
+        /* Add new style for speak button */
+        #speak-button {
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2c3e50 0%, #3d315b 100%);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
+            margin-right: 10px;
+        }
+
+        #speak-button:hover {
+            transform: scale(1.05);
+        }
+
+        #speak-button:active {
+            transform: scale(0.95);
+        }
+
+        #speak-button.speaking {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
         }
     </style>
 </head>
@@ -306,13 +337,14 @@
             </div>
         </div>
         <div id="input-box">
+            <button id="speak-button" onclick="toggleSpeech()">
+                <i class="fas fa-volume-up"></i>
+            </button>
             <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
             <button onclick="sendMessage()" id="send-button">
                 <i class="fas fa-paper-plane"></i>
             </button>
         </div>
     </div>
-
-   
 </body>
 </html>
