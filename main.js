@@ -1,7 +1,90 @@
-let selectedLanguage = '';
 
-async function processInput(input) {
-    input = input.toLowerCase();
+        let selectedLanguage = '';
+        let isSpeaking = false;
+        let speechQueue = [];
+
+        // Initialize speech synthesis
+        window.speechSynthesis.onvoiceschanged = function() {
+            voices = window.speechSynthesis.getVoices();
+        };
+        let voices = [];
+
+        function toggleSpeech() {
+            const speakButton = document.getElementById('speak-button');
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                speakButton.classList.remove('speaking');
+                isSpeaking = false;
+            } else {
+                speakButton.classList.add('speaking');
+                isSpeaking = true;
+                // Speak the last bot message if available
+                const botMessages = document.querySelectorAll('.bot-message .message-content');
+                if (botMessages.length > 0) {
+                    const lastMessage = botMessages[botMessages.length - 1].textContent;
+                    speakMessage(lastMessage);
+                }
+            }
+        }
+
+        function speakMessage(text) {
+            if (!isSpeaking) return;
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            
+            // Select voice based on language
+            const voices = window.speechSynthesis.getVoices();
+            switch(selectedLanguage) {
+                case 'Hindi':
+                    utterance.lang = 'hi-IN';
+                    break;
+                case 'German':
+                    utterance.lang = 'de-DE';
+                    break;
+                default:
+                    utterance.lang = 'en-GB';
+            }
+
+            utterance.onend = function() {
+                document.getElementById('speak-button').classList.remove('speaking');
+            };
+
+            utterance.onerror = function() {
+                document.getElementById('speak-button').classList.remove('speaking');
+            };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Modify your existing appendMessage function to include speech
+        function appendMessage(message, sender) {
+            const chatBox = document.getElementById('chat-box');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            const avatarDiv = document.createElement('div');
+            avatarDiv.className = 'message-avatar';
+            avatarDiv.innerHTML = `<i class="fas fa-${sender === 'bot' ? 'robot' : 'user'}"></i>`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.textContent = message;
+            
+            messageDiv.appendChild(avatarDiv);
+            messageDiv.appendChild(contentDiv);
+            chatBox.appendChild(messageDiv);
+            
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Speak bot messages if speech is enabled
+            if (sender === 'bot' && isSpeaking) {
+                speakMessage(message);
+            }
+        }
+
+        // Your existing functions remain the same
+        async function processInput(input) {
+input = input.toLowerCase();
     let response;
 
     if (selectedLanguage === 'English') {
@@ -187,8 +270,9 @@ if ((input.includes("Namaste") && input.includes("Chennai")) || (input.includes(
     return response;
 }
 
-async function getGeminiResponse(userInput) {
-    const YOUR_API_KEY = 'AIzaSyCtB3_w3CEAkxMVt8sF9o1PNFFryCRkqmY';
+
+        async function getGeminiResponse(userInput) {
+             const YOUR_API_KEY = 'AIzaSyCtB3_w3CEAkxMVt8sF9o1PNFFryCRkqmY';
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${YOUR_API_KEY}`;
     
     const requestBody = {
@@ -222,11 +306,12 @@ async function getGeminiResponse(userInput) {
     } catch (error) {
         console.log("There was a problem with the fetch operation:", error);
         return "Sorry, I couldn't understand that.";
-    }
-}
+	}
+        }
 
-async function sendMessage() {
-    const input = document.getElementById('user-input');
+        async function sendMessage() {
+            // ... (your existing sendMessage code)
+		   const input = document.getElementById('user-input');
     const message = input.value.trim();
     
     if (message) {
@@ -257,11 +342,12 @@ async function sendMessage() {
         
         // Display the response
         appendMessage(response, 'bot');
-    }
-}
+	}
+        }
 
-function selectLanguage(language) {
-    selectedLanguage = language;
+        function selectLanguage(language) {
+            // ... (your existing selectLanguage code)
+		   selectedLanguage = language;
     const message = `Selected language: ${language}`;
     appendMessage(message, 'user');
     
@@ -282,30 +368,12 @@ function selectLanguage(language) {
     setTimeout(() => {
         appendMessage(botResponse, 'bot');
     }, 500);
-}
+        }
 
-function handleKeyPress(event) {
-    if (event.key === 'Enter') {
+        function handleKeyPress(event) {
+            // ... (your existing handleKeyPress code)
+		  if (event.key === 'Enter') {
         sendMessage();
-    }
-}
-
-function appendMessage(message, sender) {
-    const chatBox = document.getElementById('chat-box');
-    const messageDiv = document.createElement('div');
-    messageDiv.className = `message ${sender}-message`;
-    
-    const avatarDiv = document.createElement('div');
-    avatarDiv.className = 'message-avatar';
-
-    
-    const contentDiv = document.createElement('div');
-    contentDiv.className = 'message-content';
-    contentDiv.textContent = message;
-    
-    messageDiv.appendChild(avatarDiv);
-    messageDiv.appendChild(contentDiv);
-    chatBox.appendChild(messageDiv);
-    
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
+		  }
+        }
+   
