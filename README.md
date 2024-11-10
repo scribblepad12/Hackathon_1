@@ -1,3 +1,8 @@
+main files to look at: 
+local_5.jsnb
+main.js
+main.html
+
 <h1>LandmarkLens: Your Interactive History & Architecture Guide</h1>
 
 <p><strong>LandmarkLens</strong> is not just another chatbot—it's your <strong>personal travel companion</strong>, designed to make exploring the world’s landmarks an exciting and enriching experience. Whether you're wandering through ancient ruins, strolling through majestic temples, or marveling at modern architectural wonders, <strong>LandmarkLens</strong> provides <em>instant access</em> to rich historical insights, <em>cultural stories</em>, and <em>language support</em>.</p>
