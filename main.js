@@ -1,5 +1,5 @@
 
-        let selectedLanguage = '';
+        let selectedLanguage = '';     
         let isSpeaking = false;
         let speechQueue = [];
 
