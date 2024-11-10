@@ -1,5 +1,5 @@
 
-        let selectedLanguage = '';     
+        let selectedLanguage = '';
         let isSpeaking = false;
         let speechQueue = [];
 
@@ -88,12 +88,10 @@ input = input.toLowerCase();
     let response;
 
     if (selectedLanguage === 'English') {
-        // Chennai and general inquiries
-        if ((input.includes("hi") && input.includes("chennai")) || (input.includes("chennai"))) {
-        response = "Chennai is full of fascinating spots that blend history, adventure, and scenic beauty. Here are five cool places to explore in the city:\n1. Mahabalipuram\n2. Kanchipuram\n3. Fort St. George, Chennai\n4. Pondicherry (Puducherry)\n5. Thanjavur (Tanjore)";
-    } else if (input.includes("mahabalipuram")) {
+        if (input.includes("mahabalipuram")) {
             response = "Mahabalipuram is a historic town along the southeastern coast of India in the state of Tamil Nadu. Known for its magnificent ancient temples and rock carvings, it's a UNESCO World Heritage Site. Here are places to visit in Mahabalipuram:\n1. Shore Temple\n2. Pancha Rathas\n3. Arjuna’s Penance\n4. Descent of the Ganges\n5. Krishna’s Butterball";
-        } else if (input.includes("shore temple")) {
+		}  
+        else if (input.includes("shore temple")) {
             response = "Shore Temple:\nSeaside Location: Situated right on the shore of the Bay of Bengal, the temple offers stunning views of the ocean.\nPallava Architecture: Built during the reign of the Pallava king Narasimhavarman II in the 8th century, showcasing Dravidian style with detailed carvings.\nDual Shrines: Dedicated to both Shiva and Vishnu, making it unique.\nUNESCO World Heritage Site: Recognized for its historical and architectural significance.\nBas-Relief Carvings: Features intricate carvings of deities, mythological scenes, and animals.";
         } else if (input.includes("pancha rathas")) {
             response = "Pancha Rathas:\nMonolithic Structures: Each of the five temples is carved out of a single rock.\nDifferent Architectural Styles: Unique designs reflect various forms of Dravidian architecture.\nNamed After Pandavas: Though not directly related, these are named after the Pandava brothers from the Mahabharata.\nIntricate Sculptures: Detailed sculptures of animals, gods, and goddesses add to their appeal.\nSymbol of Rock-Cut Architecture: Important examples of monolithic rock-cut architecture.";
@@ -128,7 +126,7 @@ input = input.toLowerCase();
         } else if (input.includes("garrison church")) {
             response = "Garrison Church:\nThe Garrison Church is a historic Christian church located within Fort St. George.\nBuilt by the British: Constructed in the 18th century, it is one of the oldest Anglican churches in India.\nArchitectural Beauty: Known for its simplistic yet elegant colonial design.\nCurrent Use: Still operational, it hosts services and events for the local community.";
         } else if (input.includes("pondicherry") || input.includes("puducherry")) {
-            response = "Pondicherry (now officially called Puducherry) is a charming coastal town in southern India, known for its blend of French and Indian cultures, colonial architecture, vibrant beaches, and spiritual atmosphere. Once a French colonial settlement, it retains a unique ambiance that attracts travelers seeking both relaxation and cultural immersion. Here are some places you can visit in Pondicherry:\n\n1. *French Quarter (White Town)\n2. **Auroville\n3. **Sri Aurobindo Ashram\n4. **Pondicherry Museum\n5. **Promenade Beach*";
+            response = "Pondicherry (now officially called Puducherry) is a charming coastal town in southern India, known for its blend of French and Indian cultures, colonial architecture, vibrant beaches, and spiritual atmosphere. Once a French colonial settlement, it retains a unique ambiance that attracts travelers seeking both relaxation and cultural immersion. Here are some places you can visit in Pondicherry:\n\n1. French Quarter (White Town)\n2. Auroville\n3. Sri Aurobindo Ashram\n4. Pondicherry Museum\n5. Promenade Beach";
         } else if (input.includes("french quarter") || input.includes("white town")) {
             response = "French Quarter (White Town):\n- Famous for its colonial-era French buildings, vibrant with pastel colors and bougainvillea.\n- Streets retain French names, adding to the charm of this European-style district.\n- The area is filled with quaint cafés, art galleries, and heritage hotels.\n- A prime spot for photography, capturing the unique blend of Indian and French culture.\n- Known for clean streets, quiet ambiance, and cultural events throughout the year.";
         } else if (input.includes("auroville")) {
@@ -152,45 +150,47 @@ input = input.toLowerCase();
         } else if (input.includes("sivaganga park")) {
             response = "Sivaganga Park:\n- A scenic park near the palace, offering a peaceful retreat with lush greenery.\n- Contains a large pond for boating, popular with families and children.\n- Features walking trails, making it ideal for evening strolls.\n- Has a mini zoo and play area, a favorite spot for picnics.\n- Provides a relaxing break from exploring the historic sites of Thanjavur."
         }else if (input.includes("best time to visit")) {
-        return "The best time to visit [destination] depends on what you’d like to experience! Typically, [mention peak season and ideal months for weather], but if you're looking to avoid crowds and get better deals, consider traveling during [shoulder season months].";
+        return "The best time to visit chennai depends on what you’d like to experience! Typically, the peak tourist season in Chennai typically spans from November to February, when the weather is the most pleasant. During these months, the temperatures are cooler and more comfortable, averaging between 20°C to 30°C (68°F to 86°F),but if you're looking to avoid crowds and get better deals, consider traveling during November-December.";
     } else if (input.includes("hidden gems in")) {
-        return "Absolutely! In [city], try visiting [hidden gem 1, such as a local park, a lesser-known museum, or a unique neighborhood]. It’s a fantastic spot that many tourists miss. Another hidden gem is [hidden gem 2], where you can experience authentic [cuisine, art, etc.].";
+        return "Absolutely! In chennai, try visiting he Theosophical Society is a spiritual and historical center set in lush greenery. It is not only a serene spot for nature lovers but also rich in history and culture. It’s a fantastic spot that many tourists miss. Another hidden gem is Chembarambakkam Lake, a serene, lesser-known spot near Chennai, offers peaceful views, birdwatching, and a tranquil escape from the city.";
     } else if (input.includes("family-friendly")) {
-        return "Yes, [destination] offers a range of family-friendly activities! From [mention family-friendly attractions like museums, parks, or kid-friendly events] to plenty of dining options that cater to all ages, it’s a great place for a family getaway.";
+        return "Yes, chennai offers a range of family-friendly activities! From valluvar kottam to plenty of dining options that cater to all ages, it’s a great place for a family getaway.";
     } else if (input.includes("must-see sights")) {
-        return "Some top sights in [destination] include [must-see attraction 1], [must-see attraction 2], and [must-see attraction 3]. Each of these spots offers a unique glimpse into the city’s culture and beauty. Let me know if you'd like more specific recommendations!";
+        return "Some top sights in Chennai include Mahabalipurram, Kanchipuram, and T-Nagar. Each of these spots offers a unique glimpse into the city’s culture and beauty. Let me know if you'd like more specific recommendations!";
     } else if (input.includes("budget-friendly flights")) {
-        return "Definitely! For budget-friendly flights to [destination], consider flying during weekdays or booking in advance. I can show you current deals from various airlines. Just provide me with your departure city and preferred travel dates!";
+        return "Definitely! For budget-friendly flights to Chennai, consider flying during weekdays or booking in advance. I can show you current deals from various airlines. Just provide me with your departure city and preferred travel dates!";
     } else if (input.includes("weather like")) {
-        return "In [city] around this time, you can expect [general temperature range] with [mention common weather patterns like rain, sun, or snow]. Be sure to pack accordingly!";
+        return "In Chennai around this time, you can expect 30-35 degrees celcius with common weather patterns like rain, sun. Be sure to pack accordingly!";
     } else if (input.includes("get from the airport")) {
-        return "You have several options! In [destination], you can take [public transit option like a train or bus], or a taxi/rideshare service. Many airports also offer shuttles to major hotels. I can help you arrange a transfer if needed!";
+        return "You have several options! In Chennai, you can take public transit option like a train or bus, or a taxi/rideshare service. Many airports also offer shuttles to major hotels. I can help you arrange a transfer if needed!";
     } else if (input.includes("visa to visit")) {
-        return "Visa requirements for [country] depend on your nationality. You can usually check requirements online or with the consulate of [country]. Let me know if you’d like guidance on where to look!";
+        return "Visa requirements for India depend on your nationality. You can usually check requirements online or with the consulate of India. Let me know if you’d like guidance on where to look!";
     } else if (input.includes("COVID-19 situation")) {
-        return "Travel policies can change quickly. I recommend checking [destination]'s official government or tourism website for up-to-date COVID-19 guidelines, entry requirements, and safety measures.";
+        return "Travel policies can change anytime. I recommend checking Chennai's official government or tourism website for up-to-date COVID-19 guidelines, entry requirements, and safety measures.";
     } else if (input.includes("local currency")) {
-        return "The currency in [destination] is [currency name]. Credit cards are widely accepted in most urban areas and tourist spots, but it’s a good idea to have some cash for smaller establishments or rural areas.";
+        return "The currency used in Chennai, as well as throughout India, is the Indian Rupee (INR). Banknotes come in denominations of ₹2, ₹10, ₹20, ₹50, ₹100, ₹200, ₹500, and ₹2,000. Coins are available in ₹1, ₹2, ₹5, and ₹10 denominations, though higher denominations are rarely used in daily transactions.";
     } else if (input.includes("safe to travel alone")) {
-        return "[Destination] is generally safe for solo travelers, but as with any destination, it's wise to stay aware of your surroundings and avoid less populated areas after dark. Let me know if you'd like tips on safe areas to explore!";
+        return "Chennai is generally safe for solo travelers, but as with any destination, it's wise to stay aware of your surroundings and avoid less populated areas after dark. Let me know if you'd like tips on safe areas to explore!";
     } else if (input.includes("packing light")) {
         return "Sure! Start with versatile clothing that you can mix and match, and limit bulky items. Consider using packing cubes to stay organized, and don’t forget a travel-sized toiletry kit. I also recommend leaving some space for any souvenirs!";
     } else if (input.includes("tipping culture")) {
-        return "In [country], tipping norms vary. For example, [mention common tipping percentage for restaurants, hotel staff, etc.]. In some cases, tipping may already be included in the bill, so be sure to check!";
+        return "In Chennai, tipping is appreciated but not always mandatory. For restaurants, a tip of 10-15% of the bill is common if service charge isn’t included. For smaller eateries, rounding up the bill is often sufficient. Hotel staff, like bellboys and housekeepers, usually receive ₹50-100. Taxi and auto drivers are typically not tipped, but rounding up the fare is a kind gesture.";
     } else if (input.includes("tap water")) {
-        return "In [city], tap water is [safe/not safe] to drink. Many locals and tourists prefer bottled or filtered water, especially outside urban areas. I recommend carrying a refillable bottle if safe water is available.";
+        return "In Chennai], tap water is not safe to drink. Many locals and tourists prefer bottled or filtered water, especially outside urban areas. I recommend carrying a refillable bottle if safe water is available.";
     } else if (input.includes("local festivals or events")) {
-        return "Yes! Around this time, [destination] hosts [festival or event name]. It’s a wonderful opportunity to experience local culture, food, and performances. Would you like to know more about event schedules or ticket information?";
+        return "Yes! Around this time, Chennai hosts vibrant festivals like Pongal (January), celebrating harvest with traditional rituals, Chennai Music Season (December-January), a grand classical music and dance festival, and Margazhi Festival (December), featuring temple events and performances. Thaipusam (January-February) is another major festival marked by colorful processions and rituals.";
     } else if (input.includes("good restaurant near")) {
-        return "Certainly! Near [location], some popular restaurants are [restaurant 1, type of cuisine] and [restaurant 2]. Let me know if you'd like specific dietary options or more details!";
+        return "Certainly! Popular restaurants in Chennai include Murugan Idli Shop and Saravana Bhavan for authentic South Indian fare, Dakshin at Taj Connemara for Chettinad cuisine, Anjappar for spicy Chettinad dishes, Peshawri for North-West frontier cuisine, and Amethyst for a trendy café experience with global dishes . Let me know if you'd like specific dietary options or more details!";
     } else if (input.includes("best way to get around")) {
-        return "[City] has [mention transit options like metro, bus, or bike rentals], which are very convenient. If you prefer more flexibility, taxis and rideshare options are widely available. I can also help you find day passes or rental options!";
+        return "The best transport options in Chennai are the Metro for fast, air-conditioned travel across key areas, auto-rickshaws for short, flexible rides, and app-based cabs (Ola, Uber) for convenience. For a more local experience, you can also use buses, though they can be crowded during peak hours, which are very convenient. If you prefer more flexibility, taxis and rideshare options are widely available. I can also help you find day passes or rental options!";
     } else if (input.includes("3-day trip")) {
-        return "For a 3-day trip to [destination], I suggest focusing on top attractions like [major sight 1 and 2], leaving some time to explore local neighborhoods. Would you like a sample itinerary for each day?";
+        return "On a 3-day trip to Chennai, explore cultural landmarks like Kapaleeshwarar Temple, San Thome Basilica, and Fort St. George. Visit serene spots like Elliot's Beach and the Theosophical Society. Discover local markets in T Nagar, and end with a day trip to the heritage site of Mahabalipuram. ";
+    }else if ((input.includes("hi") && input.includes("chennai")) || (input.includes("chennai"))) {
+        response = "Chennai is full of fascinating spots that blend history, adventure, and scenic beauty. Here are five cool places to explore in the city:\n1. Mahabalipuram\n2. Kanchipuram\n3. Fort St. George, Chennai\n4. Pondicherry (Puducherry)\n5. Thanjavur (Tanjore)";
     } else if (input.includes("travel restrictions or entry requirements")) {
-        return "Currently, [country] has [mention any restrictions like required vaccinations, negative COVID test, or quarantine measures]. Be sure to check official sources for the latest updates before you travel.";
+        return "Currently,India has [No mandatory vaccination for entry: India does not require travelers to show proof of vaccination against COVID-19 for entry into the country.However, travelers are encouraged to be fully vaccinated before travel, especially for their own protection and to meet any transit country requirements]. Be sure to check official sources for the latest updates before you travel.";
     } else if (input.includes("itinerary for")) {
-        return "I’d be happy to help you build an itinerary for [destination]! There are also some great travel websites and apps with pre-planned itineraries tailored to different interests. Let me know what types of activities you’re most interested in!";
+        return "I’d be happy to help you build an itinerary for chennai! There are also some great travel websites and apps with pre-planned itineraries tailored to different interests. Let me know what types of activities you’re most interested in!";
     } 
 	}
     else if (selectedLanguage === 'Hindi') {
