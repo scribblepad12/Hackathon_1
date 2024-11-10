@@ -16,9 +16,6 @@
 <h3>4. Reducing Dependency on Human Guides</h3>
 <p><strong>LandmarkLens</strong> empowers you to explore independently, with a virtual guide in your pocket. Get detailed information, suggested itineraries, and answers to all your questions, whenever you need them.</p>
 
-<h3>5. Enhancing the Travel Experience Through Curated Itineraries</h3>
-<p>Planning a trip can be overwhelming. <strong>LandmarkLens</strong> helps you curate a personalized itinerary that fits your interests.</p>
-
 <h2>Key Features of LandmarkLens:</h2>
 <ul>
     <li><strong>Multilingual Support</strong>: Break down language barriers with support for multiple languages.</li>
@@ -34,7 +31,7 @@
 <p><em>Get Started Now:</em> Ready to begin your journey? Download <strong>LandmarkLens</strong> today and unlock the hidden stories and secrets of the world’s most iconic landmarks.</p>
 
 
-
+=========================================================================================
 This is the error we were getting while we were pushing our code 
 Error: InvalidCharacterError: Failed to execute 'btoa' on 'Window': The string to be encoded contains characters outside of the Latin1 range.
 we submitted it as a normal html and js file which are main.js and main.html
