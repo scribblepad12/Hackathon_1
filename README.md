@@ -41,3 +41,15 @@ we submitted it as a normal html and js file which are main.js and main.html
 
 
 
+
+
+
+
+
+
+WE ARE FACING SOME ERRORS WHILE PUSHING THE CODE TO GITHUB THE ERROR SAYS:
+
+Error: InvalidCharacterError: Failed to execute 'btoa' on 'Window': The string to be encoded contains characters outside of the Latin1 range.
+
+
+
