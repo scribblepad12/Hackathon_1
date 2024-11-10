@@ -1,7 +1,8 @@
 main files to look at: 
-local_5.jsnb
-main.js
-main.html
+local_5.jsnb<br>
+main.js<br>
+main.html<br>
+View instructions in the end.
 
 <h1>LandmarkLens: Your Interactive History & Architecture Guide</h1>
 
@@ -57,9 +58,13 @@ WE ARE FACING SOME ERRORS WHILE PUSHING THE CODE TO GITHUB THE ERROR SAYS:
 
 Error: InvalidCharacterError: Failed to execute 'btoa' on 'Window': The string to be encoded contains characters outside of the Latin1 range.
 
-================================================================================================================================
+================================================================================================================================<br>
 INSTRUCTION:
--RUN IN GOOGLE CHROME;
+-RUN IN GOOGLE CHROME;<br>
+-double tap the speaker button and wait for the response the speaker icon must turn red 
+-just wait a few seconds if it is not responding there might be a delay
+
+we have tried multiple times now so its working 😅
 
 
 
