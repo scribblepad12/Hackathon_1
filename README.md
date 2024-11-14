@@ -1,5 +1,3 @@
-Got it! Here’s the updated text with **"LandmarkLens"** replaced by **"Gayatri"**:
-
 ---
 
 **Gayatri: Interactive Guide**
