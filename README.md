@@ -1,7 +1,7 @@
 View instructions in the end.
 
-<h1>LandmarkLens: Your Interactive History & Architecture Guide</h1>
-<p><strong>Welcome to LandmarkLens<strong>, your personal gateway to explore Chennai, one of India's most vibrant cities. Whether you're a curious traveler, a history enthusiast, or a cultural explorer, LandmarkLens is here to make your journey unforgettable!</p>
+<h1>Gayatri: Interactive Guide </h1>
+<p><strong>Welcome to our project: Gayatri <strong>, your personal assistant to explore Chennai, one of India's most vibrant cities. Whether you're a curious traveler, a history enthusiast, or a cultural explorer, LandmarkLens is here to make your journey unforgettable!</p>
 
 
 ![Chatbot Preview](./BOTTT.png)
