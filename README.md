@@ -1,7 +1,3 @@
-main files to look at: 
-local_6.jsnb<br>
-main.js<br>
-main.html<br>
 View instructions in the end.
 
 <h1>LandmarkLens: Your Interactive History & Architecture Guide</h1>
