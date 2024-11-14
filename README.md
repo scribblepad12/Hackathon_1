@@ -1,4 +1,3 @@
----
 
 **Gayatri: Interactive Guide**
 
