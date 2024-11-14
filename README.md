@@ -8,7 +8,7 @@ View instructions in the end.
 <p><strong>Welcome to LandmarkLens<strong>, your personal gateway to explore Chennai, one of India's most vibrant cities. Whether you're a curious traveler, a history enthusiast, or a cultural explorer, LandmarkLens is here to make your journey unforgettable!</p>
 
 
-![Chatbot Preview](./chatbot.jpeg)
+![Chatbot Preview](./BOTTT.png)
 
 
 <h2>Real-World Problems We Solve:</h2>
