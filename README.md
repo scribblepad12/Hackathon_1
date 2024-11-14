@@ -30,7 +30,3 @@ With **Gayatri**, language is never a barrier. The chatbot supports multiple lan
 **Gayatri** offers **instant, interactive**, and **multilingual assistance** right at your fingertips.
 
 *Get Started Now:* Ready to begin your journey? Download **Gayatri** today and unlock the hidden stories and secrets of the world’s most iconic landmarks.
-
----
-
-This is the updated content with **"LandmarkLens"** replaced with **"Gayatri"**. Let me know if you need further adjustments!
