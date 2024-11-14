@@ -4,7 +4,7 @@ View instructions in the end.
 <p><strong>Welcome to our project: Gayatri <strong>, your personal assistant to explore Chennai, one of India's most vibrant cities. Whether you're a curious traveler, a history enthusiast, or a cultural explorer, LandmarkLens is here to make your journey unforgettable!</p>
 
 
-![Chatbot Preview](./BOTTT.png)
+![Chatbot Preview](./BOTTT.png)        
 
 
 <h2>Real-World Problems We Solve:</h2>
@@ -19,9 +19,9 @@ View instructions in the end.
 <p>With <strong>LandmarkLens</strong>, language is never a barrier. The chatbot supports multiple languages and instantly translates the local history and culture.</p>
 
 <h3>4. Reducing Dependency on Human Guides</h3>
-<p><strong>LandmarkLens</strong> empowers you to explore independently, with a virtual guide in your pocket. Get detailed information, suggested itineraries, and answers to all your questions, whenever you need them.</p>
+<p><strong>Gayatri</strong> empowers you to explore independently, with a virtual guide in your pocket. Get detailed information, suggested itineraries, and answers to all your questions, whenever you need them.</p>
 
-<h2>Key Features of LandmarkLens:</h2>
+<h2>Key Features of Gayatri:</h2>
 <ul>
     <li><strong>Multilingual Support</strong>: Break down language barriers with support for multiple languages.</li>
     <li><strong>Interactive Voice Output</strong>: Ask questions and get answers in real time by typing </li>
@@ -30,10 +30,10 @@ View instructions in the end.
     <li><strong>Seamless Experience</strong>: Whether you’re a solo traveler, a family, or part of a group, LandmarkLens adapts to your needs.</li>
 </ul>
 
-<h2>Why Choose LandmarkLens?</h2>
+<h2>Why Choose Gayatri?</h2>
 <p><strong>LandmarkLens</strong> offers <strong>instant, interactive</strong>, and <strong>multilingual assistance</strong> right at your fingertips.</p>
 
-<p><em>Get Started Now:</em> Ready to begin your journey? Download <strong>LandmarkLens</strong> today and unlock the hidden stories and secrets of the world’s most iconic landmarks.</p>
+<p><em>Get Started Now:</em> Ready to begin your journey? Download <strong>Gayatri</strong> today and unlock the hidden stories and secrets of the world’s most iconic landmarks.</p>
 
 
 =========================================================================================
